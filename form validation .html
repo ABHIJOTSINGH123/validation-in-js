@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+           validation in form
+        </title>
+                 <script>
+                         function validateForm (){
+                            var x=document.forms["myForm"] ["fname"].value;
+                            if(x==""){
+                                alert("name must be filled out ") ;
+                                return false;
+                                
+                            }
+                                                }
+                 </script>
+    </head>
+                <body>
+                    <h1>form validation in java script</h1>
+                    <form name="myForm" onsubmit="validateForm()" >
+                        name;<input type="text"name="fname">
+                        <input type="submit"value="submit">
+                        <p id="message"></p>
+                    </form>
+                    
+
+                </body>
+</html>
